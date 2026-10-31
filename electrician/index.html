@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VoltMaster Electric | Fast & Safe Electrical Services</title>
+    <style>
+        :root {
+            --primary: #2563eb;
+            --dark: #0f172a;
+            --light: #f8fafc;
+            --accent: #f59e0b;
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; font-family: system-ui, -apple-system, sans-serif; }
+        body { background-color: var(--light); color: var(--dark); line-height: 1.6; }
+        
+        /* Header & Hero */
+        header { background: var(--dark); color: white; padding: 1rem 2rem; display: flex; justify-content: space-between; align-items: center; }
+        .logo { font-weight: bold; font-size: 1.25rem; color: var(--accent); }
+        .hero { background: linear-gradient(rgba(15, 23, 42, 0.85), rgba(15, 23, 42, 0.85)), url('https://images.unsplash.com/photo-1621905251189-08b45d6a269e?auto=format&fit=crop&w=1200&q=80') center/cover; color: white; text-align: center; padding: 5rem 1.5rem; }
+        .hero h1 { font-size: 2.5rem; margin-bottom: 1rem; }
+        .hero p { font-size: 1.15rem; margin-bottom: 2rem; color: #cbd5e1; max-width: 600px; margin-left: auto; margin-right: auto; }
+        
+        /* Call to Action Button */
+        .btn-cta { background-color: var(--accent); color: var(--dark); padding: 1rem 2rem; font-size: 1.2rem; font-weight: bold; text-decoration: none; border-radius: 8px; display: inline-block; box-shadow: 0 4px 14px rgba(245, 158, 11, 0.4); transition: transform 0.2s; }
+        .btn-cta:hover { transform: translateY(-2px); }
+
+
+        /* Services Grid */
+        .section { padding: 4rem 2rem; max-width: 1000px; margin: 0 auto; text-align: center; }
+        .section h2 { font-size: 2rem; margin-bottom: 3rem; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem; text-align: left; }
+        .card { background: white; padding: 2rem; border-radius: 12px; box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1); }
+        .card h3 { color: var(--primary); margin-bottom: 0.5rem; }
+
+
+        /* Mobile Sticky Footer Call Bar */
+        .mobile-bar { display: none; position: fixed; bottom: 0; left: 0; right: 0; background: var(--dark); padding: 1rem; text-align: center; z-index: 100; border-top: 2px solid var(--accent); }
+        .mobile-bar a { background: var(--accent); color: var(--dark); display: block; padding: 0.75rem; font-weight: bold; text-decoration: none; border-radius: 6px; font-size: 1.1rem; }
+
+
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 2rem; }
+            .mobile-bar { display: block; }
+            body { padding-bottom: 70px; }
+        }
+    </style>
+</head>
+<body>
+
+
+    <header>
+        <div class="logo">⚡ VoltMaster Electric</div>
+        <div>Emergency: 24/7</div>
+    </header>
+
+
+    <section class="hero">
+        <h1>Licensed Electricians For Safe & Reliable Power Solutions</h1>
+        <p>From panel upgrades to emergency fault-finding, our certified electricians keep your home and business running safely.</p>
+        <a href="tel:5550199" class="btn-cta">📞 Call (555) 019-9888</a>
+    </section>
+
+
+    <div class="section">
+        <h2>Our Professional Services</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>Panel Upgrades</h3>
+                <p>Modernize your circuit breaker panels to safely handle high-draw modern household appliances.</p>
+            </div>
+            <div class="card">
+                <h3>Wiring & Outlets</h3>
+                <p>Safe installation and repair of indoor lighting, ceiling fans, USB outlets, and switches.</p>
+            </div>
+            <div class="card">
+                <h3>Emergency Troubleshooting</h3>
+                <p>Fast diagnostics and repair for sudden power outages, tripping breakers, and electrical hazards.</p>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Sticky Mobile Call Bar -->
+    <div class="mobile-bar">
+        <a href="tel:5550199">📞 Tap Here to Call an Electrician Now</a>
+    </div>
+
+
+</body>
+</html>
