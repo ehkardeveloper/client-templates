@@ -1,0 +1,88 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SolidFix Handyman | Home Repairs & Remodeling</title>
+    <style>
+        :root {
+            --primary: #d97706;
+            --dark: #18181b;
+            --light: #f4f4f5;
+            --accent: #e11d48;
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; font-family: system-ui, -apple-system, sans-serif; }
+        body { background-color: var(--light); color: var(--dark); line-height: 1.6; }
+        
+        header { background: var(--dark); color: white; padding: 1rem 2rem; display: flex; justify-content: space-between; align-items: center; }
+        .logo { font-weight: bold; font-size: 1.25rem; color: var(--primary); }
+        .hero { background: linear-gradient(rgba(24, 24, 27, 0.85), rgba(24, 24, 27, 0.85)), url('https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=1200&q=80') center/cover; color: white; text-align: center; padding: 5rem 1.5rem; }
+        .hero h1 { font-size: 2.5rem; margin-bottom: 1rem; }
+        .hero p { font-size: 1.15rem; margin-bottom: 2rem; color: #a1a1aa; max-width: 600px; margin-left: auto; margin-right: auto; }
+        
+        .btn-cta { background-color: var(--primary); color: white; padding: 1rem 2rem; font-size: 1.2rem; font-weight: bold; text-decoration: none; border-radius: 8px; display: inline-block; box-shadow: 0 4px 14px rgba(217, 119, 6, 0.4); transition: transform 0.2s; }
+        .btn-cta:hover { transform: translateY(-2px); }
+
+
+        .section { padding: 4rem 2rem; max-width: 1000px; margin: 0 auto; text-align: center; }
+        .section h2 { font-size: 2rem; margin-bottom: 3rem; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem; text-align: left; }
+        .card { background: white; padding: 2rem; border-radius: 12px; box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1); }
+        .card h3 { color: var(--primary); margin-bottom: 0.5rem; }
+
+
+        .mobile-bar { display: none; position: fixed; bottom: 0; left: 0; right: 0; background: var(--dark); padding: 1rem; text-align: center; z-index: 100; border-top: 2px solid var(--primary); }
+        .mobile-bar a { background: var(--primary); color: white; display: block; padding: 0.75rem; font-weight: bold; text-decoration: none; border-radius: 6px; font-size: 1.1rem; }
+
+
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 2rem; }
+            .mobile-bar { display: block; }
+            body { padding-bottom: 70px; }
+        }
+    </style>
+</head>
+<body>
+
+
+    <header>
+        <div class="logo">🛠️ SolidFix Handyman</div>
+        <div>Quality Home Repairs</div>
+    </header>
+
+
+    <section class="hero">
+        <h1>Your To-Do List, Handled Professionally</h1>
+        <p>From minor carpentry and drywall repairs to full home maintenance, get fast, reliable service done right the first time.</p>
+        <a href="tel:5550399" class="btn-cta">📞 Call for Repairs: (555) 039-9444</a>
+    </section>
+
+
+    <div class="section">
+        <h2>What We Can Fix For You</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>General Home Repairs</h3>
+                <p>Fixing squeaky doors, repairing drywall patches, hanging shelves, and handling odd jobs around the house.</p>
+            </div>
+            <div class="card">
+                <h3>Carpentry & Fixtures</h3>
+                <p>Custom shelving installation, baseboard trim work, cabinet adjustments, and window hardware replacement.</p>
+            </div>
+            <div class="card">
+                <h3>Assembly & Installation</h3>
+                <p>Flat-pack furniture assembly, TV wall mounting, ceiling fan installations, and curtain rod setups.</p>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="mobile-bar">
+        <a href="tel:5550399">📞 Tap to Call a Handyman Now</a>
+    </div>
+
+
+</body>
+</html>
